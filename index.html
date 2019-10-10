@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/styles.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +26,514 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Slide 1 - Title Slide -->
+				<section>
+					<h2>Progressive Web Apps and Modern Web APIs</h2>
+					<footer class="title-footer">
+						<cite><span>—</span>Micah Courey<span>—</span></cite>
+					</footer>
+				</section>
+				<!-- End Slide 1 - Title Slide -->
+
+				<!-- Slide 2 - What are PWAs? -->
+				<section>
+					<h2>What are Progressive Web Apps?</h2>
+					<section>
+						<blockquote>
+							Progressive web apps use modern web APIs along with traditional progressive enhancement strategy 
+							to create cross-platform web applications. These apps work everywhere and provide several features 
+							that give them the same user experience advantages as native apps.
+							<footer>
+								<cite>— MDN</cite>
+							</footer>
+						</blockquote>
+					</section>
+
+				</section>
+				<!-- End Slide 2 - What are PWAs? -->
+
+				<!-- Slide 3 - Characteristics of PWAs? -->
+				<section>
+					<h2>Characteristics of PWAs</h2>
+					<section>
+						<img src="https://lh5.googleusercontent.com/b-KVQX3-1_sH4aH4MXbelYTkWg8m5aDlgH-bXff3iPveJtsqHP5qXP4MWy7B0aTd9akJJsayjp2eI70_FDnC7SOswCIqm7KdUKMOJbrEw9_-8xGuMgXawxJvzf9VUk7cWi9kaT4Z"
+						 	alt="animation of a PWA being installed on a user's home screen">
+					</section>
+
+					<section>
+						<div class="box"> 
+							<h3>Reliable</h3>
+							<div class="split-box">
+								<p>
+									Load instantly and never show the downasaur, even in uncertain network conditions.
+								</p>
+								<img class="box-image"
+									src="https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_1440.png" 
+									alt="drawing of reliable app on phone">
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<div class="box"> 
+							<h3>Fast</h3>
+							<div class="split-box">
+								<img class="box-image"
+									src="https://developers.google.com/web/progressive-web-apps/images/pwa-fast_1440.png" 
+									alt="drawing of user on phone">
+								<p>
+									Respond quickly to user interactions with silky smooth animations and smooth scrolling. 
+									53% of users abandon sites that take longer than 3 seconds to load.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="box"> 
+							<h3>Integrated and Engaging</h3>
+							<div class="split-box">
+								<p>
+									Feels like a native app on the device, with an immersive user experience. PWAs are installable 
+									and live on the user's home screen, without the need for an app store. They offer an immersive 
+									full screen experience. 
+								</p>
+								<img class="box-image"
+									src="https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_1440.png" 
+									alt="drawing of engaging app experience">
+							</div>
+						</div>
+					</section>
+				</section>
+				<!-- End Slide 3 - Characteristics of PWAs -->
+
+				<!-- Slide 3 - Why Build PWAs? -->
+				<section>
+					<h2>Why Build PWAs?</h2>
+					<section>
+						Building PWAs ensures that you're using the latests web advancements to deliver engaging 
+						user experiences for your users. 
+					</section>
+
+					<section>
+						<div class="box"> 
+							<h3>Add to Home Screen</h3>
+							<div class="split-box">
+								<p>
+									When the Progressive Web App criteria are met, Chrome prompts users to add the 
+									Progressive Web App to their home screen.
+								</p>
+								<img class="box-image"
+									src="https://cdn57.androidauthority.net/wp-content/uploads/2018/04/Huawei-P20-Pro-and-Huawei-P20-notches-home-screen-detail.jpg" 
+									alt="drawing of reliable app on phone">
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<div class="box"> 
+							<h3>No Connection? No Problem</h3>
+							<div class="split-box">
+								<img class="box-image"
+									src="https://media1.giphy.com/media/11XxC0wD3jVSCI/giphy.gif?cid=790b761157315939275ca0ed1cf6cd9ba8c847addbbe43ae&rid=giphy.gif" 
+									alt="drawing of user on phone">
+								<p>
+									Service workers enabled Konga to send 63% less data for 
+									initial page loads, and 84% less data to complete the first transaction!
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="box"> 
+							<h3>Increased engagement</h3>
+							<div class="split-box">
+								<p>
+									Web push notifications helped eXtra Electronics increase engagement by 4X. 
+									And those users spend twice as much time on the site.
+								</p>
+								<img
+									src="https://mdn.mozillademos.org/files/15930/js13kpwa-notification.png" 
+									alt="drawing of engaging app experience">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="box"> 
+							<h3>Improved conversions</h3>
+							<div class="split-box">
+								<img class="box-image"
+									src="https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_1440.png" 
+									alt="drawing of engaging app experience">
+								<p>
+									The ability to deliver an amazing user experience helped AliExpress improve conversions for 
+									new users across all browsers by 104% and on iOS by 82%.
+								</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Baseline PWA Checklist</h2>
+					<section>
+						<div class="box"> 		
+							<ul>
+								<li>Site is served over HTTPS</li>
+								<li>Pages are responsive on tablets & mobile devices</li>
+								<li>All app URLs load while offline</li>
+								<li>Metadata provided for Add to Home screen</li>
+								<li>First load is fast even on 3G</li>
+								<li>Metadata provided for Add to Home screen</li>
+							</ul>	
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Exemplary PWA Checklist</h2>
+					<section>
+						<div class="box">
+							<h3>Indexability & Social</h3> 			
+							<ul>
+								<li>Site's content is indexed by Google</li>
+								<li>Schema.org metadata is provided where appropriate</li>
+								<li>Social metadata is provided where appropriate</li>
+								<li>Canonical URLs are provided when necessary</li>
+								<li>Pages use the History API</li>
+							</ul>	
+						</div>
+					</section>
+					<section>
+						<div class="box">
+							<h3>User Experience</h3> 			
+							<ul>
+								<li>Content doesn't jump as the page loads</li>
+								<li>Pressing back from a detail page retains scroll position on the previous list page</li>
+								<li>When tapped, inputs aren't obscured by the on screen keyboard</li>
+								<li>Content is easily shareable from standalone or full screen mode</li>
+								<li>Any app install prompts are not used excessively</li>
+								<li>The Add to Home Screen prompt is intercepted</li>
+							</ul>	
+						</div>
+					</section>
+					<section>
+						<div class="box">
+							<h3>Performance & Caching</h3> 			
+							<ul>
+								<li>First load very fast even on 3G</li>
+								<li>Site uses cache-first networking</li>
+								<li>Site appropriately informs the user when they're offline</li>
+							</ul>	
+						</div>
+					</section>
+					<section>
+						<div class="box">
+							<h3>Push Notifications</h3> 			
+							<ul>
+								<li>Provide context to the user about how notifications will be used</li>
+								<li>UI encouraging users to turn on Push Notifications must not be overly aggressive.</li>
+								<li>Site dims the screen when permission request is showing</li>
+								<li>Push notifications must be timely, precise and relevant</li>
+								<li>Provides controls to enable and disable notifications</li>
+								<li>User is logged in across devices via Credential Management API</li>
+								<li>User can pay easily via native UI from Payment Request API.</li>
+							</ul>	
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Auth & Payments</h3> 			
+							<ul>
+								<li>User is logged in across devices via Credential Management API</li>
+								<li>User can pay easily via native UI from Payment Request API.</li>
+							</ul>	
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h3>Modern Web Specifications/APIs Make PWAs Possible</h3>
+					<blockquote>
+						Progressive web apps are simply a set of guidelines introduced by Google to bring awareness
+						to the rich user experiences that can be achieved by utilizing modern web APIs.
+					</blockquote>
+				</section>
+
+				<section>
+					<h3>The Web App Manifest Specification</h3>
+					<section>
+						<blockquote>
+							The web app manifest is a simple JSON file that tells the browser about your web application 
+							and how it should behave when 'installed' on the user's mobile device or desktop. Having a 
+							manifest is required by Chrome to show the Add to Home Screen prompt.
+							<footer>
+								<cite>— Google</cite>
+							</footer>
+						</blockquote>
+					</section>
+					<section class="mt-2">
+						<pre><code data-trim data-noescape>
+							{
+								"short_name": "Maps",
+								"name": "Google Maps",
+								"icons": [
+									{
+										"src": "/images/icons-192.png",
+										"type": "image/png",
+										"sizes": "192x192"
+									},
+									{
+										"src": "/images/icons-512.png",
+										"type": "image/png",
+										"sizes": "512x512"
+									}
+								],
+								"start_url": "/maps/?source=pwa",
+								"background_color": "#3367D6",
+								"display": "standalone",
+								"scope": "/maps/",
+								"theme_color": "#3367D6"
+							}
+						</code></pre>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Tell the browser about your manifest</h3>	
+							<p>
+								Web app manifests are deployed in your HTML pages using a link 
+								element in the head of a document:
+							</p>
+							<pre><code><link rel="manifest" href="/manifest.json"></code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Manifest Properties: short_name, name</h3>
+							<p>
+								You must provide at least the short_name or name property. If both are provided, 
+								short_name is used on the user's home screen, launcher, or other places where space 
+								may be limited. name is used in the app install prompt.
+							</p>
+							<pre><code data-trim data-noescape>
+								{
+									"short_name": "My App",
+									"name": "My Really Cool App"
+									...
+								}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Manifest Properties: icons</h3>
+							<p>
+								When a user adds your site to their home screen, you can define a set of icons for 
+								the browser to use. These icons are used in places like the home screen, app launcher, 
+								task switcher, splash screen, etc.
+							</p>
+							<pre><code data-trim data-noescape>
+								...
+								"icons": [
+									{
+										"src": "/images/icons-192.png",
+										"type": "image/png",
+										"sizes": "192x192"
+									},
+									...
+								]
+								...
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Manifest Properties: start_url</h3>
+							<p>
+								The start_url tells the browser where your application should start when it is launched, 
+								and prevents the app from starting on whatever page the user was on when they added your 
+								app to their home screen. Your start_url should direct the user straight into your app, 
+								rather than a product landing page. Think about what the user will want to do once they 
+								open your app, and place them there.
+							</p>
+							<pre><code data-trim data-noescape>
+								{
+									...
+									"start_url": "/?utm_source=a2hs"
+									...
+								}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Manifest Properties: background_color & display</h3>
+							<p>
+								The background_color property is used on the splash screen when the application is first launched.
+								You can customize what browser UI is shown when your app is launched. For example, you can hide 
+								the address bar and browser chrome. Or games may want to go completely full screen.
+							</p>
+							<pre><code data-trim data-noescape>
+								{
+									...
+									"background_color": "#3367D6",
+									"display": "standalone"
+									...
+								}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Manifest Properties: orientation</h3>
+							<p>
+								You can enforce a specific orientation, which is advantageous for apps that work in only one 
+								orientation, such as games. Use this selectively. Users prefer selecting the orientation.
+							</p>
+							<pre><code data-trim data-noescape>
+								{
+									...
+									"orientation": "landscape"
+									...
+								}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Manifest Properties: scope</h3>
+							<p>
+								The scope defines the set of URLs that the browser considers to be within your app, and is used 
+								to decide when the user has left the app. The scope controls the URL structure that encompasses 
+								all the entry and exit points in your web app.
+							</p>
+							<pre><code data-trim data-noescape>
+								{
+									...
+									"scope": "/dashboard/"
+									...
+								}
+							</code></pre>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+					<h3>The Service Worker API</h3>
+					<section>
+						<blockquote>
+							A Service Worker is a script that executes in the background, in a separate thread from the 
+							browser UI. Service worker cache makes it possible for a web site to function offline. They 
+							also enable deeper platform integration for the web, like rich caching, push notifications 
+							and background sync.
+							<footer>
+								<cite>— Chris Love</cite>
+							</footer>
+						</blockquote>
+					</section>
+
+					<section>
+						<div class="box flex-center">
+							<h3>How do service workers work?</h3>
+							<p>
+								A Service worker sits between the browser and the network, acting like a proxy server,
+								handling a collection of non-UI centric tasks. They are event driven and live outside the 
+								browser process, enabling them to work without an active browser session. 
+							</p>
+							<img src="https://miro.medium.com/max/4872/1*oOcY2Gn-LVt1h-e9xOv5oA.jpeg" style="height: 300px" alt="Service worker diagram">
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Service Workers require HTTPS</h3>
+							<p>
+								To avoid man-in-the-middle attacks you can only register service workers on pages served 
+								over HTTPS, so we know the service worker the browser receives hasn't been tampered with 
+								during its journey through the network.
+							</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Register a service worker</h3>
+							<p>
+								To install a service worker you need to kick start the process by registering it in your page. 
+								This tells the browser where your service worker JavaScript file lives.
+							</p>
+							<pre><code data-trim data-noescape>
+								if ('serviceWorker' in navigator) {
+									window.addEventListener('load', function() {
+										navigator.serviceWorker.register('/sw.js').then(function(registration) {
+											// Registration was successful
+											console.log('ServiceWorker registration successful with scope: ', registration.scope);
+										}, function(err) {
+											// registration failed :(
+											console.log('ServiceWorker registration failed: ', err);
+										});
+									});
+								}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<div class="box">
+							<h3>Pre-cache resources</h3>
+							<p>
+								We can cache a pre-defined list of app resources. This means the site will loads
+								instantly on subsequent visits and it can work when there is no network, offline, 
+								or poor network connectivity.
+							</p>
+							<pre><code data-trim data-noescape>
+								self.addEventListener('fetch', event => {
+									event.respondWith(caches.match(event.request)
+										.then(cachedResponse => {
+											if (cachedResponse) {
+												return cachedResponse;
+											}
+											return fetch(event.request);
+										})
+									);
+								});
+							</code></pre>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h3>PWAs Support</h3>
+					<section>
+						<div class="box">
+							<ul>
+								<li>PWAs are now supported on all desktop platforms, including Chrome OS, Linux, Mac, and Windows.</li>
+								<li>
+									PWAs are supported on both iOS and Android on all major mobile browsers including Chrome, Firefox, 
+									Safari, UC Browser, Samsung internet, Mint Browser, Wechat
+								</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section>
+						<img src="https://static.makeuseof.com/wp-content/uploads/2019/08/progressive-web-apps-service-worker-support.png" alt="Service Worker support chart from caniuse website">
+					</section>
+				</section>
+
+
+	
 			</div>
 		</div>
 

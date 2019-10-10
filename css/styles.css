@@ -1,0 +1,88 @@
+
+.reveal {
+  color: #F7F7FF;
+  background-color: #030027;
+}
+p {
+  text-align: left;
+  font-size: 1.8rem;
+}
+li  {
+  text-align: right;
+  font-size: 2rem;
+  text-align: left !important;
+  font-size: 2.2rem;
+  padding: 4px;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+.reveal section blockquote {
+  text-align: left;
+  border-left: 12px solid #EA526F;
+  padding: 2rem;
+  width: 100%;
+}
+cite {
+  text-align: right;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+.box  {
+  background-color: #36004A;
+  outline: 4px outset #e1c0ed;
+  outline-offset: 0px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  color: #EA526F;
+  text-align: left;
+  margin-top: 64px;
+}
+.box h3 {
+  text-align: left;
+  font-size: 2.5rem;
+  border-bottom: 4px solid #e1c0ed;
+  color: #42affa;
+  margin: 0 -2rem;
+  padding: 0rem 2rem 0.5rem 2rem;
+}
+.reveal section .box-image {
+  height: 250px;
+  width: auto;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.reveal section .split-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reveal section .split-box > * {
+  max-width: 50%;
+}
+.reveal section .split-box > img {
+  max-height: 400px;
+}
+.reveal section .box li {
+  text-align: left;
+}
+.reveal pre code {
+  max-height: calc(100vh - 100px);
+}
+.mt-2 {
+  margin-top: 2rem !important;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-footer {
+  margin-top: 120px;
+  color: #42affa;
+}
+.title-footer > cite > span {
+  color: #EA526F;
+}
